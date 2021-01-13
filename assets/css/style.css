@@ -1,0 +1,366 @@
+/*-------------
+ 	General
+-------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  /* color: #555; */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  background: rgb(194,194,194);
+background: linear-gradient(0deg, rgba(194,194,194,1) 0%, rgba(230,230,230,1) 50%, rgba(194,194,194,1) 100%);
+
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a.btn {
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #2196f3;
+  font-weight: 800;
+  text-align: center;
+}
+
+hr {
+  width: 150px;
+  height: 2px;
+  background-color: #b80c0c;
+  border: 0;
+  margin-bottom: 80px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 125px 100px;
+}
+
+@media (max-width: 1000px) {
+  section {
+    padding: 100px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 80px 30px;
+  }
+}
+
+section h3.title {
+  color: #8f1010;
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+ul.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*-------------
+ 	Header
+-------------*/
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 35px 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(117, 117, 117, 0));
+}
+
+header h2 {
+  font-family: "Potta one", cursive;
+  font-size: 30px;
+}
+
+header nav {
+  display: flex;
+  font-family: "Potta one", cursive;
+}
+
+header nav li {
+  margin: 0 15px;
+  font-size: 22px;
+}
+
+header nav li:first-child {
+  margin-left: 0;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+}
+
+/* The hero image */
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(122, 2, 2, 0.5), rgba(0, 0, 0, 0.767)),
+    url("../img/atlascoa.jpg");
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  justify-content: space-around;
+  min-height: 100vh;
+  color: rgb(0, 0, 0);
+  /* text-align: center; */
+  flex-direction: row;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.heroside {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* display: flex;
+  justify-content: start;
+  align-items: flex-start; */
+}
+
+.herocenter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 200px;  */
+  /* min-width: 500px; */
+  /* text-align: center; */
+}
+
+.textlist {
+  color:rgb(0, 0, 0);
+  /* background-color: rgba(255, 255, 255, 0.192); */
+  /* background: rgb(31, 31, 31); */
+  background: linear-gradient(90deg, rgba(255,255,255,0.4) 100%, rgba(255,255,255,0.4) 100%,  rgba(144,144,144,0.4) 0%, rgba(255,255,255,0.4) 100%);
+  font-size: 20px;
+  min-width: 350px;
+  min-height: 680px;
+  margin: 5% 0px;
+  line-height: 200%;
+  /* border: 3px solid #fff; */
+  border-radius: 10%;
+  padding: 10px;
+}
+
+
+.headcolumn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.oneimg {
+  display: inline-block;
+  width: 350px;
+}
+
+.oneimg img {
+  width: 100%;
+}
+
+.smallimg {
+  
+  width: 80px;
+  margin: 20px 10px;
+}
+
+.ninja {
+  text-align: center;
+  border: 5px solid #ff0000;
+  width: 80px;
+  line-height: 100px;
+  border-radius: 100%;
+  margin: 20px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.clickbait {
+  color: #8f1010;
+  font-weight: 700;
+}
+
+.coe {
+  width: 80px;
+  margin: 35px 5px;
+  border-radius: 10%;
+}
+
+/* Table of contents ------------------------------------------------- */ 
+.table-of-contents {
+  /* font-size: .8em; */
+  display: flex;
+  justify-content: center;
+  /* float: right; */
+  /* max-width: 30%; */
+  /* margin-bottom: 12px; */
+  /* margin-left: 80px; */
+  /* padding: 0 1em; */
+
+}
+
+/* .table-of-contents:before {
+ 
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8495a3;
+} */
+/* .table-of-contents a {
+  text-decoration: none;
+  color: #545454;
+}
+.table-of-contents a:hover, .table-of-contents a:active {
+  text-decoration: underline;
+}
+.table-of-contents ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: counter-table-of-contents;
+}
+.table-of-contents ol ol {
+  padding-left: 2em;
+}
+.table-of-contents ol li {
+  margin: .5em 0;
+}
+.table-of-contents ol li::before {
+  content: counters(counter-table-of-contents, '.') ' ';
+  counter-increment: counter-table-of-contents;
+  opacity: .7;
+} */
+
+@media only screen and (max-width: 768px){
+  .table-of-contents {
+      display: block;
+      float: none;
+      max-width: 100%;
+      margin-left: 0;
+  }
+}
+
+/*----------------------
+ 	Features Section
+----------------------*/
+/* 
+.features {
+  background-color: #000000;
+} */
+
+.features .grid li {
+  /* padding: 0 30px; */
+  display: inline-block;
+  flex-basis: 100%;
+  /* text-align: center; */
+  padding-bottom: 50px;
+  margin-left: 20%;
+  margin-bottom: 25px;
+}
+
+.features .grid li h4 {
+  color: #bb0e0e;
+  font-size: 20px;
+  margin-bottom: 25px;
+  /* text-align: left; */
+  margin-left: 20px;
+}
+
+.features .grid li p {
+
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .features .grid li {
+    flex-basis: 20%;
+    margin-bottom: 65px;
+  }
+
+  .features .grid li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .features .grid li {
+    flex-basis: 50%;
+  }
+}
