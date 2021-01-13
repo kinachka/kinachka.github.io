@@ -374,7 +374,7 @@ header nav li:last-child {
 
 @media (max-width: 1000px) {
   .features .grid li {
-    flex-basis: 20%;
+    margin-left:10%;
     margin-bottom: 65px;
   }
 
@@ -383,8 +383,4 @@ header nav li:last-child {
   }
 }
 
-@media (max-width: 600px) {
-  .features .grid li {
-    flex-basis: 50%;
-  }
-}
+
