@@ -210,8 +210,6 @@ header nav li:last-child {
 .textlist {
   display:inline-block;
   color:rgb(0, 0, 0);
-  /* background-color: rgba(255, 255, 255, 0.192); */
-  /* background: rgb(31, 31, 31); */
   background: linear-gradient(90deg, rgba(255,255,255,0.4) 100%, rgba(255,255,255,0.4) 100%,  rgba(144,144,144,0.4) 0%, rgba(255,255,255,0.4) 100%);
   font-size: 20px;
   width: 20%;
@@ -237,21 +235,12 @@ header nav li:last-child {
   }
 }
 
-
-.headcolumn {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-}
-
 .oneimg {
   display: inline-block;
   /* width: 100px;
   min-width: 100px; */
 }
+
 
 .herocenter {
   position: relative;
@@ -268,8 +257,15 @@ header nav li:last-child {
 	height: 100%;
   /* width: 350px; */
   max-width: 350px;
-  min-width: 5px;
+  
   display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  
+  .oneimg {
+    min-width: 5px;
+  }
 }
 
 .smallimg {
