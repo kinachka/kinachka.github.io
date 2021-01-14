@@ -213,8 +213,8 @@ header nav li:last-child {
   background: linear-gradient(90deg, rgba(255,255,255,0.4) 100%, rgba(255,255,255,0.4) 100%,  rgba(144,144,144,0.4) 0%, rgba(255,255,255,0.4) 100%);
   font-size: 20px;
   width: 20%;
-  min-width: 180px;
   min-height: 680px;
+  min-width: 200px;
   line-height: 200%;
   /* border: 3px solid #fff; */
   border-radius: 10%;
@@ -224,14 +224,17 @@ header nav li:last-child {
 @media (max-width: 1000px) {
   .textlist {
     margin-top: 10px;
-    min-height: 750px;
+  
   }
 }
 
 @media (max-width: 700px) {
   
   .textlist {
+    min-height: 1000px;
+    max-height: 1000px;
     margin-top: 100px;
+    min-width: 150px;
   }
 }
 
