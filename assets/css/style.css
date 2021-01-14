@@ -12,14 +12,27 @@ html {
   font: normal 16px sans-serif;
   scroll-behavior: smooth;
   /* color: #555; */
+  /* background: url(assets/img/exalted.png); */
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  background: rgb(194,194,194);
-background: linear-gradient(0deg, rgba(194,194,194,1) 0%, rgba(230,230,230,1) 50%, rgba(194,194,194,1) 100%);
+  
+  
+  background:
+  url('../img/exalted.png') 0 0 repeat-y,
+  url('../img/exalted.png') 100% 0 repeat-y,
+  
+  /* background-color: rgb(180, 180, 180);  */
+  linear-gradient(0deg, rgba(194,194,194,1) 0%, rgba(230,230,230,1) 50%, rgba(194,194,194,1) 100%);
+  background-size: 100px;
+}
 
+@media (max-width: 1000px) {
+  body {
+    background-size: 70px;
+  }
 }
 
 ul,
@@ -196,7 +209,6 @@ header nav li:last-child {
 
 .textlist {
   display:inline-block;
-  margin-top: 100px;
   color:rgb(0, 0, 0);
   /* background-color: rgba(255, 255, 255, 0.192); */
   /* background: rgb(31, 31, 31); */
@@ -205,7 +217,6 @@ header nav li:last-child {
   width: 20%;
   min-width: 180px;
   min-height: 680px;
-  margin: 5% 0px;
   line-height: 200%;
   /* border: 3px solid #fff; */
   border-radius: 10%;
@@ -215,6 +226,7 @@ header nav li:last-child {
 @media (max-width: 1000px) {
   .textlist {
     margin-top: 10px;
+    min-height: 750px;
   }
 }
 
