@@ -1,0 +1,59 @@
+@import "reset.scss";
+@import "setka.scss";
+@import url(https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900&display=swap);
+
+$fontFamily: "Heebo";
+
+html {
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #000 !important;
+}
+
+.header-blog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #f8f8fa;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  z-index: 9;
+  h2 {
+    font-family: "Potta one", cursive;
+    font-size: 30px;
+  }
+  nav {
+    display: flex;
+    font-family: "Potta one", cursive;
+    li {
+      margin: 0 15px;
+      font-size: 22px;
+      list-style-type: none;
+      color: black;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .squeeze {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.transition-tubik-300 {
+  transition: 0.3s;
+}
