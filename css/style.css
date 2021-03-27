@@ -987,8 +987,13 @@ body.ie ._ibg img {
   display: none;
 }
 
-.footer__content {
+.footer {
+  text-align: center;
   padding: 50px 0;
+}
+
+.footer__social {
+  margin: 0px 0px 25px 0px;
 }
 
 .hello {
@@ -1216,6 +1221,15 @@ body.ie ._ibg img {
           align-items: center;
 }
 
+.social__item {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  margin: 0px 17px;
+  font-size: 30px;
+  color: inherit;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
@@ -1258,6 +1272,10 @@ body.ie ._ibg img {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .social__item:hover {
     color: #ff6464;
   }
 }
@@ -1398,6 +1416,10 @@ body.ie ._ibg img {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
+  }
+
+  .footer {
+    padding: 30px 0;
   }
 
   .hello {
