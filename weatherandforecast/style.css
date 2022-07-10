@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600&display=swap');
+
 body {
-    background-color: rgba(0, 0, 0, 0.616);
-    
+    background-color: rgba(141, 117, 155, 0.856);
+    margin: 0;
     color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body .sub-things {
@@ -44,17 +47,19 @@ a:active {
 
 .menu__list {
     display: flex;
-    margin-bottom: 30px;
+}
+
+.menu__body ul {
+    display: flex;
+    padding: 0;
 }
 
 header {
     position: relative;
 	z-index: 100;
-}
-.header__content {
-    max-width: 1052px;
-    padding: 0px 10px;
-    margin: 0px auto;
+    background-color: rgba(205, 184, 216, 0.89);
+    
+    
 }
 
 .header__menu {
@@ -71,9 +76,33 @@ header {
 }
 
 .header__menu li a {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .sub-things_list .sub-things {
     padding: 20px;
 }
+
+.input-things {
+   
+   
+}
+
+.input-things input {
+    text-align: center;
+    padding: 5px;
+    border-radius: 35px;
+    border-color: #000;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.input-things button {
+    text-align: center;
+    padding: 1px;
+    border-radius: 5px;
+    border-color: #000;
+    margin-right: 10px;
+    width: 50px;
+}
+
