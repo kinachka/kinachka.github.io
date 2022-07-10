@@ -1,0 +1,79 @@
+body {
+    background-color: rgba(0, 0, 0, 0.616);
+    
+    color: #fff;
+}
+
+body .sub-things {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .input-things{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cityname_cont {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+.menu__list {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+header {
+    position: relative;
+	z-index: 100;
+}
+.header__content {
+    max-width: 1052px;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+.header__menu {
+    padding: 10px 0;
+    height: 82px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu li {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.header__menu li a {
+    color: #fff;
+}
+
+.sub-things_list .sub-things {
+    padding: 20px;
+}

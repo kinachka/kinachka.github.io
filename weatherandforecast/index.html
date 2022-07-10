@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__menu">
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li><a href="index.html" class="menu__link">Главная</a></li>
+              <li><a href="forecast.html" class="menu__link">Forecast</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="cityname_cont">
+      <h1>City: <span id="name"></span></h1>
+    </div>
+    <div class="sub-things">
+      <div class="temp">temp: <span id="temp"></span>°C</div>
+      <div class="desc">description: <span id="desc"></span></div>
+    </div>
+    <div class="input-things">
+      <input id="citynameinput" type="text" value="Петрозаводск" />
+      <button type="submit" id="citySubmitButton">Submit</button>
+    </div>
+    <script src="scriptс.js"></script>
+  </body>
+</html>
