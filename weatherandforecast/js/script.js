@@ -11,7 +11,6 @@ async function getData() {
 	console.log(data.name)
 	console.log(data.main.temp)
 	console.log(data.weather[0].description)
-	console.log(data)
 	document.getElementById('name').textContent = data.name
 	document.getElementById('temp').textContent = data.main.temp
 	document.getElementById('desc').textContent = data.weather[0].description
@@ -20,7 +19,7 @@ getData()
 
 document.getElementById("citySubmitButton").onclick = function() {
 	cityname = document.getElementById('citynameinput').value
-	console.log('hello')
-	console.log(cityname)
 	getData()
 }
+
+
