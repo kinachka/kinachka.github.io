@@ -1221,7 +1221,7 @@ body.ie ._ibg img {
           align-items: center;
 }
 
-.social__item {
+.fa-brands {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
