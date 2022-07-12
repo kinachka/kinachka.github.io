@@ -4,8 +4,6 @@ const api_key = '&appid=2d8efa497b04dd86220fd265458c6bcc'
 const units = '&units=metric'
 const api_lang = '&lang=ru'
 
-
-
 async function getData() {
 	let api_url = url + cityname + api_key + units + api_lang
 	const response = await fetch (api_url)

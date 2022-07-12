@@ -1589,3 +1589,7 @@ function scroll_animate(event) {
 	//If native scroll
 	//disableScroll();
 }
+
+document.getElementById("joke").onclick = function() {
+	alert('joke, just hire me')
+}
