@@ -19,6 +19,7 @@ async function getData() {
 	if (data.weather[0].description == 'переменная облачность') {emojivalue = ' ⛅'}
 	if (data.weather[0].description == 'ясно') {emojivalue = ' ☀️'}
 	if (data.weather[0].description == 'небольшая облачность') {emojivalue = ' 🌤️'}
+	if (data.weather[0].description == 'небольшая морось') {emojivalue = ' 🌧️'}
 	document.getElementById('name').textContent = data.name
 	document.getElementById('temp').textContent = data.main.temp
 	document.getElementById('desc').textContent = data.weather[0].description + emojivalue
