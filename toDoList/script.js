@@ -1,13 +1,10 @@
-let inputToDo
+let inputToDo = ''
 
-function getElems() {
-    document.getElementById('submitToDo').onclick = function() {
-        inputToDo = document.getElementById('inputTo').value
-        hello()
-    }
-}
+document.getElementById('submitToDo').addEventListener('click', hello) 
 
 function hello() {
+    inputToDo = document.getElementById('inputTo').value
+
     if (inputToDo == '') return
 
     const newUl = document.createElement("ul")
@@ -30,8 +27,8 @@ function hello() {
     thirdLi.appendChild(delBtn)
     newUl.appendChild(thirdLi)
 
-    doneBtn.addEventListener('click', function(){doneBtn.parentElement.parentElement.remove()})
-    delBtn.addEventListener('click', function(){delBtn.parentElement.parentElement.remove()})
+    doneBtn.addEventListener('click', function(){newUl.remove()})
+    delBtn.addEventListener('click', function(){newUl.remove()})
    
     clearInput()
 }
@@ -41,10 +38,6 @@ function clearInput() {
     clear.value = ''
 }
 
-document.addEventListener('click', getElems) 
 
-function createDelBtn() {
-    const newBtn = document.createElement('button')
 
-}
 

@@ -1,0 +1,138 @@
+* {
+	
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	
+
+}
+body {
+	line-height: 1;
+	color: #000;
+	background-image: url('img1.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+ul {
+	padding: 0;
+    margin: 0;
+}
+
+ul li {
+	margin-right: 30px;
+    
+}
+
+.main .input__sec {
+    margin-bottom: 30px;
+}
+
+.main .output__sec {
+    
+}
+
+
+.main .output__sec .output__item {
+	margin: 0 30px 30px 30px ;
+	display: flex;
+	justify-content: space-between;
+	border-block-end: 1px #000 solid;
+}
+
+.main .output__sec .output__item:last-child{
+	border-bottom: none;
+}
+
+.main .output__sec .output__item .delBtn {
+	height: 23px;
+	width: 23px;
+	padding: 0;
+	
+}
+
+.main .output__sec .output__item .ulAll{
+	margin-bottom: 20px;
+}
+
+.main .output__sec .output__item .ulAll li a{
+	color: #000;
+}
+
+
+
+.output__artistname::before {
+    content: 'Artist name: ';
+    color: rgb(0, 37, 247);
+    font-style: italic;
+    
+}
+
+.output__songs::before {
+    content: 'Song name: ';
+    color: rgb(0, 37, 247);
+    font-style: italic;
+}
