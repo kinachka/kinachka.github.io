@@ -1,13 +1,5 @@
-* {
-	
-}
-*,
-*:before,
-*:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600&display=swap');
+
 :focus,
 :active {
 	outline: none;
@@ -16,23 +8,17 @@ a:focus,
 a:active {
 	outline: none;
 }
-aside,
-nav,
-footer,
-header,
-section {
-	display: block;
-}
-html,
-body {
-	height: 100%;
-	
 
+button {
+	cursor: pointer;
 }
+
 body {
+	margin: 0px;
 	line-height: 1;
 	color: #000;
 	background-color: rgb(223, 185, 245);
+	font-family: 'Source Sans Pro', sans-serif;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -58,6 +44,9 @@ a:visited {
 }
 a:hover {
 	text-decoration: none;
+}
+p{
+	margin: 0;
 }
 ul li {
 	list-style: none;
@@ -85,17 +74,26 @@ ul li {
     
 }
 
+.main {
+	margin-top: 20px;
+}
+
+.main .input__sec .input__p{
+	margin-bottom: 20px;
+}
+
 .main .input__sec {
-    margin-bottom: 30px;
+    margin: 0 0 20px 30px;
 }
 
 .main .output__sec {
     
+	
 }
 
-
 .main .output__sec .output__item {
-	margin: 0 30px 30px 30px ;
+	margin-bottom: 20px;
+	padding: 0 30px;
 	display: flex;
 	justify-content: space-between;
 	border-block-end: 1px #000 solid;
@@ -109,7 +107,6 @@ ul li {
 	height: 23px;
 	width: 23px;
 	padding: 0;
-	
 }
 
 .main .output__sec .output__item .ulAll{
@@ -120,13 +117,10 @@ ul li {
 	color: #000;
 }
 
-
-
 .output__artistname::before {
     content: 'Artist name: ';
     color: rgb(0, 37, 247);
     font-style: italic;
-    
 }
 
 .output__songs::before {

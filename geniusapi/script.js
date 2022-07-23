@@ -4,7 +4,6 @@ const accesstoken = '&access_token=3EKEG9SkvHs-c4gBp2QcJGsVetVFy6ICi9XfHDtKVY7_b
 document.getElementById('submit').addEventListener('click', getData)
 
 async function getData() {
-
     if (document.getElementById('inputArtistname').value == '') return
     try {
         const artistname = document.getElementById('inputArtistname').value
@@ -67,5 +66,3 @@ async function getData() {
         document.getElementById('inputArtistname').value = ''
     }
 }
-
-
