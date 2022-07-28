@@ -30,8 +30,8 @@ body {
 } */
 body {
 	line-height: 1;
-
-
+	margin: 0;
+	padding: 0;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -54,6 +54,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
+	color: #000;
 }
 a:hover {
 	text-decoration: none;
@@ -81,4 +82,24 @@ ul {
 
 ul li {
 	margin-right: 10px;
+}
+
+.main {
+	padding: 15px;
+}
+
+.main a {
+	margin-right: 10px;
+}
+
+.main input {
+	margin-right: 10px;
+}
+
+.main button {
+	margin-right: 10px;
+}
+
+.main :last-child {
+	margin-right: 0px;
 }

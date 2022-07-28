@@ -62,15 +62,13 @@ function clearInput() {
 document.getElementById('clearLS').addEventListener('click', () => {
     localStorage.clear()
     document.querySelectorAll("ul").forEach(e => e.remove());
-    })
+})
 
 window.addEventListener('load', () => {
     const test = localStorage.getItem('toDoListItem')
     const toDoListLS = JSON.parse(test)
     if (toDoListLS == null || toDoListLS == '') return
-    toDoListLS.forEach(element => {
-    const inputToDo = element
-
+    toDoListLS.forEach(inputToDo => {
     const newUl = document.createElement("ul")
     document.body.appendChild(newUl)
 
