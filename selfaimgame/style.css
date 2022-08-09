@@ -62,13 +62,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 600px;
   min-height: 600px;
   background-color: rgb(158, 158, 158);
   box-shadow: -8px -8px 20px #2A333D;
   border-radius: 30px;
-  
   position: relative;
+}
+
+.main .screen .board .restart-btn {
+  border: 0;
+  font-size: 24px;
+  padding: 7px;
+  border-radius: 5px;
+  transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.main .screen .board .restart-btn:hover {
+  background-color: rgb(158, 158, 158);
+  color: #fff;
+  padding: 7px;
+
 }
 
 @media  (max-width: 700px) {

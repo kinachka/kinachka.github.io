@@ -6,7 +6,9 @@ const screenq = document.querySelector('.screen')
 const beforegame = document.querySelector('.beforegame')
 const timeEl = document.querySelector('#time')
 let time = 0
+let timeUp = 0
 let score = 0
+let forClear
 
 startbtn.addEventListener('click', () => {
     startbtn.classList.add('op-0', 'curs-d')
@@ -19,7 +21,6 @@ board.addEventListener('click', event => {
         createRandomCircle()
         score++
     }
-
 })
 
 function revealTimeBtns() {
@@ -31,6 +32,7 @@ function revealTimeBtns() {
     mainTime.addEventListener('click', event => {
         if (event.target.classList.contains('timebtn')) {
             time = parseInt(event.target.getAttribute('data-time'))
+            timeUp = time
             beforegame.remove()
             startGame()
         }
@@ -39,7 +41,8 @@ function revealTimeBtns() {
 
 function startGame() {
     screenq.classList.add('op-1')
-    setInterval(decreaseTime, 1000)
+    
+    forClear = setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
 }
@@ -47,6 +50,7 @@ function startGame() {
 function decreaseTime() {
     if (time === 0) {
         finishGame()
+        clearInterval(forClear)
     } else {
         let current = --time
         if (current < 10) {
@@ -61,8 +65,22 @@ function setTime(value) {
 }
 
 function finishGame () {
+    
     timeEl.parentNode.classList.add('op-0')
     board.innerHTML = `<h1>Счет: <span class="primary">${score}</span></h1>`
+    
+    const restart = document.createElement('button')
+    restart.classList.add('restart-btn')
+    restart.innerText = 'Restart'
+    board.append(restart)
+    restart.addEventListener('click', () => {
+        timeEl.parentNode.classList.remove('op-0')
+        board.innerHTML = ''
+        restart.remove()
+        score = 0
+        time = timeUp
+        startGame()
+    })
 }
 
 function createRandomCircle() {
