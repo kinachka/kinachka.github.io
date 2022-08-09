@@ -10,10 +10,12 @@ let timeUp = 0
 let score = 0
 let forClear
 
-startbtn.addEventListener('click', () => {
+startbtn.addEventListener('click', showTimeBtns)
+
+function showTimeBtns() {
     startbtn.classList.add('op-0', 'curs-d')
     revealTimeBtns()
-})
+}
 
 board.addEventListener('click', event => {
     if (event.target.classList.contains('circle')) {
@@ -24,6 +26,7 @@ board.addEventListener('click', event => {
 })
 
 function revealTimeBtns() {
+    startbtn.removeEventListener('click', showTimeBtns)
     mainTime.classList.remove('op-0')
     for (const timebtn of timeBtn) {
         timebtn.classList.add('curs-p')
