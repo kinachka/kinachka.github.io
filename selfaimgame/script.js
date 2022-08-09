@@ -37,7 +37,6 @@ function revealTimeBtns() {
     })
 }
 
-
 function startGame() {
     screenq.classList.add('op-1')
     setInterval(decreaseTime, 1000)
