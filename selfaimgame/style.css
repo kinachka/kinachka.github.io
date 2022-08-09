@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #111;
+  font-family: 'Khula', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main .screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .screen .board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(158, 158, 158);
+  box-shadow: -8px -8px 20px #2A333D;
+  border-radius: 30px;
+  opacity: 0;
+  transition: opacity 0.6s ease 0.2s;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .screen .board {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.main .beforegame {
+  min-height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.main .beforegame button {
+  padding: 15px 25px;
+  height: 65px;
+  font-size: 30px;
+  background-color: rgb(151, 150, 150);
+  border: solid 2px transparent;
+  /* background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(128, 128, 128) 50%, rgb(87, 87, 87) 100%);; */
+  color: #000;
+  border-radius: 20px;
+
+  transition: background-color 0.4s ease 0s, color 0.4s ease 0s, opacity 1s;
+  margin: 20px;
+}
+
+.main .beforegame h3 {
+  font-size: 40px;
+}
+
+.main .beforegame .startbtn {
+  margin-top: 30px;
+}
+
+.main .beforegame .timeBtns button {
+  padding: 15px 25px;
+  height: 65px;
+  font-size: 30px;
+  background-color: rgb(151, 150, 150);
+  border: solid 2px transparent;
+  /* background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(128, 128, 128) 50%, rgb(87, 87, 87) 100%);; */
+  color: #000;
+  border-radius: 20px;
+
+  transition: background-color 0.4s ease 0s, color 0.4s ease 0s, opacity 1s;
+  margin: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .beforegame .timeBtns {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+
+.curs-p {
+  cursor: pointer;
+}
+
+.main .beforegame button:hover {
+  padding: 17px 27px;
+  background-color: #111;
+  /* background: linear-gradient(90deg, rgb(243, 9, 9) 0%, rgb(128, 128, 128) 50%, rgb(87, 87, 87) 100%); */
+  color: #fff;
+  border-radius: 20px;
+  border: 0;
+
+}
+
+.op-1 {
+  opacity: 1 !important;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
