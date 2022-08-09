@@ -133,6 +133,10 @@ body {
   margin-top: 30px;
 }
 
+.main .beforegame .timeBtns {
+  transition:  opacity 1s ease-out;
+}
+
 .main .beforegame .timeBtns button {
   padding: 15px 25px;
   height: 65px;

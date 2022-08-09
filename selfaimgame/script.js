@@ -24,10 +24,9 @@ board.addEventListener('click', event => {
 })
 
 function revealTimeBtns() {
+    mainTime.classList.remove('op-0')
     for (const timebtn of timeBtn) {
         timebtn.classList.add('curs-p')
-        timebtn.classList.remove('op-0')
-        
     }
     mainTime.addEventListener('click', event => {
         if (event.target.classList.contains('timebtn')) {
