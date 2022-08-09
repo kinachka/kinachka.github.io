@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -31,18 +28,16 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
+  
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: #fff;
   background-color: #111;
   font-family: 'Khula', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   overflow: hidden;
 }
 
@@ -52,7 +47,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  opacity: 0;
+  transition: opacity 0.6s ease 0.2s;
 }
 
 .main {
@@ -67,25 +63,31 @@ body {
   justify-content: center;
   align-items: center;
   width: 600px;
-  height: 600px;
+  min-height: 600px;
   background-color: rgb(158, 158, 158);
   box-shadow: -8px -8px 20px #2A333D;
   border-radius: 30px;
-  opacity: 0;
-  transition: opacity 0.6s ease 0.2s;
+  
   position: relative;
 }
 
-@media only screen and (max-width: 600px) {
+@media  (max-width: 700px) {
   .main .screen .board {
     width: 400px;
     height: 400px;
   }
 }
 
+@media  (max-width: 440px) {
+  .main .screen .board {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .main .beforegame {
   min-height: 100vh;
-  width: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +104,7 @@ body {
   /* background: linear-gradient(90deg, rgb(54, 54, 54) 0%, rgb(128, 128, 128) 50%, rgb(87, 87, 87) 100%);; */
   color: #000;
   border-radius: 20px;
-
+  cursor: pointer;
   transition: background-color 0.4s ease 0s, color 0.4s ease 0s, opacity 1s;
   margin: 20px;
 }
@@ -129,17 +131,21 @@ body {
   margin: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+@media  (max-width: 600px) {
   .main .beforegame .timeBtns {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    
   }
 }
 
 
 .curs-p {
   cursor: pointer;
+}
+
+.curs-d {
+  cursor: default !important;
 }
 
 .main .beforegame button:hover {

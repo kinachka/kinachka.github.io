@@ -2,14 +2,14 @@ const startbtn = document.querySelector('.startbtn')
 const mainTime = document.querySelector('.timeBtns')
 const timeBtn = document.querySelectorAll('.timebtn')
 const board = document.querySelector('.board')
+const screenq = document.querySelector('.screen')
 const beforegame = document.querySelector('.beforegame')
 const timeEl = document.querySelector('#time')
 let time = 0
 let score = 0
 
 startbtn.addEventListener('click', () => {
-    startbtn.classList.add('op-0')
-    startbtn.classList.remove('curs-p')
+    startbtn.classList.add('op-0', 'curs-d')
     revealTimeBtns()
 })
 
@@ -39,7 +39,7 @@ function revealTimeBtns() {
 
 
 function startGame() {
-    board.classList.add('op-1')
+    screenq.classList.add('op-1')
     setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
